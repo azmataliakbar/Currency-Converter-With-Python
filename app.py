@@ -103,7 +103,7 @@ def fetch_exchange_rates():
 # Main app container
 st.markdown('<div class="main-container">', unsafe_allow_html=True)
 st.markdown('<div class="app-title1">🐍 Learn Python 🐍</div>', unsafe_allow_html=True)
-st.markdown('<div class="app-title2">💱 Currency Converter 💱</div>', unsafe_allow_html=True)
+st.markdown('<div class="app-title2">💱 Currency Converter</div>', unsafe_allow_html=True)
 st.markdown('<div class="app-subtitle">Convert between different currencies.</div>', unsafe_allow_html=True)
 
 # Fetch exchange rates
@@ -160,7 +160,7 @@ if st.session_state.last_updated:
 # Conversion history section
 if st.session_state.conversion_history:
     
-    st.markdown('<h3 style="color: yellow; text-align: center;">Conversion Result &  History</h3>', unsafe_allow_html=True)
+    st.markdown('<h3 style="color: green; text-align: center;">Conversion Result &  History</h3>', unsafe_allow_html=True)
     
     for conversion in reversed(st.session_state.conversion_history[-5:]):
         st.markdown(f"""
