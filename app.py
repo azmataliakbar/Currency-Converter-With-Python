@@ -48,7 +48,7 @@ st.markdown("""
         margin-bottom: 20px;
     }
     .result-container {
-        font-size: 20px;
+        font-size: 15px;
         font-weight: bold;
         color: #BF40BF;
         text-align: center;
