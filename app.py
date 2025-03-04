@@ -160,7 +160,7 @@ if st.session_state.last_updated:
 # Conversion history section
 if st.session_state.conversion_history:
     
-    st.markdown('<h3 style="color: green; text-align: center;">Conversion Result &  History</h3>', unsafe_allow_html=True)
+    st.markdown('<h3 style="font-size: 25px; color: green; text-align: center;">Conversion Result &  History</h3>', unsafe_allow_html=True)
     
     for conversion in reversed(st.session_state.conversion_history[-5:]):
         st.markdown(f"""
